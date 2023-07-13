@@ -11,6 +11,7 @@
       #LoginScreen,#dashboard{
         display: flex;
         justify-content: center;
+        text-align: center;
       }
 
     </style>
@@ -67,7 +68,7 @@
 
       function showUserDetails(user){
         document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:10%">
+          <img src="${user.photoURL}" style="width:18% border-radius:9%">
           <p>Name: ${user.displayName}</p>
           <p>Email: ${user.email}</p>
         `
