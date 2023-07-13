@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firebase Authentication Google </title>
+    <style>
+      h1,h3{
+        text-align: center;
+      }
+      #LoginScreen,#dashboard{
+        display: flex;
+        justify-content: center;
+      }
+
+    </style>
   </head>
   <body>
+    <div class="heading">
     <h1>Welcome : Firebase Auth: Google</h1>
-    <p>Kaustubh Med Care</p>
+    <h3>Kaustubh Medical Care</h3>
+  </div>
 
     <div id="LoginScreen">
       <button id="login">Login with Google</button>
@@ -17,14 +29,9 @@
       <div id="userDetails"></div>
       <button id="logout">Logout</button>
     </div>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
     <script type="module">
        var firebaseConfig = {
